@@ -1,0 +1,15 @@
+GET http://localhost:5294/todos
+
+###
+POST http://localhost:5294/todos
+content-type: application/json
+
+{
+    "id": 2,
+    "name": "Cook Dinner",
+    "dueDate": "2024-05-12",
+    "isCompleted": false
+}
+
+###
+GET http://localhost:5294/todos/2
